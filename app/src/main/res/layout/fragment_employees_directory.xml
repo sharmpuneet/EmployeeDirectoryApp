@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:text="@string/no_record_found"
         android:textStyle="bold"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/black"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:visibility="gone"
         android:gravity="center_horizontal"
