@@ -60,5 +60,7 @@ In real world, different environment Urls will be used in the flavors instead of
 * I have not created styles.xml because of not having a lot of re-usability of textStyles.
 * Not added any Splash Screen as there is no initial loading required. I could have called API on Splash and used the data on the screen if the data was huge and needed to be stored.
 
+
 ## Video
 
+https://user-images.githubusercontent.com/26492811/153958530-9c10befe-8419-4f37-a044-e125bae1e3c4.mov
