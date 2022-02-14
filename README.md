@@ -12,7 +12,9 @@ Note: Kept minimum version to Oreo which covers 86% of the devices in market.
 App can run in multiple build variants and product flavors. Created release and debug version of the app as build variants. Also,
 created multiple flavors to showcase different environment (empty and malformed json as single API is not supporting error scenario)
 
-assembleDebug, installProdDebug tasks can be used to run the app. 
+* assembleDebug, installProdDebug tasks can be used to run the app to get success state. 
+* installStageDebug to test empty State
+* installDevDebug to test malformed Url
 Note: Not added any signInConfigs for release versions.
 
 ## Focus Areas
