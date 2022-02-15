@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.*
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -78,9 +77,6 @@ class EmployeesDirectoryFragment : Fragment() {
                     is GenericResponse.Error -> {
                         handleLoading(refresh = response.refresh)
                         showEmptyState()
-                        response.message?.let { message ->
-                            Toast.makeText(activity, message, Toast.LENGTH_SHORT).show()
-                        }
                     }
                     is GenericResponse.Loading -> {
                         if (response.refresh) binding?.swipeRefreshLayout?.isRefreshing =
@@ -101,7 +97,10 @@ class EmployeesDirectoryFragment : Fragment() {
 
     private fun setSwipeToRefreshListener() {
         binding?.swipeRefreshLayout?.setOnRefreshListener {
-            employeesDirectoryViewModel.getEmployeesDirectory(true, url = BuildConfig.EMPLOYEES_DIRECTORY_API)
+            employeesDirectoryViewModel.getEmployeesDirectory(
+                true,
+                url = BuildConfig.EMPLOYEES_DIRECTORY_API
+            )
         }
     }
 

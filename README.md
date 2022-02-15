@@ -27,6 +27,7 @@ Note: Not added any signInConfigs for release versions.
 * Clean and Crisp UI using CardView to show details.
 * Applied Name sorting in the list for better look and feel.
 * Created build variants and product flavors to showcase the production readiness of the app.
+* Created a Sealed Class to track the state of API Call.
 
 ## Reason for desired focus and problems solved.
 * A clean architecture has been followed to abide by SOLID principles. Separation of concerns helped in creating unit test cases.
