@@ -12,7 +12,9 @@ Note: Kept minimum version to Oreo which covers 86% of the devices in market.
 App can run in multiple build variants and product flavors. Created release and debug version of the app as build variants. Also,
 created multiple flavors to showcase different environment (empty and malformed json as single API is not supporting error scenario)
 
-assembleDebug, installProdDebug tasks can be used to run the app. 
+* assembleDebug, installProdDebug tasks can be used to run the app to get success state. 
+* installStageDebug to test empty State
+* installDevDebug to test malformed Url
 Note: Not added any signInConfigs for release versions.
 
 ## Focus Areas
@@ -61,5 +63,7 @@ In real world, different environment Urls will be used in the flavors instead of
 * I have not created styles.xml because of not having a lot of re-usability of textStyles.
 * Not added any Splash Screen as there is no initial loading required. I could have called API on Splash and used the data on the screen if the data was huge and needed to be stored.
 
+
 ## Video
 
+https://user-images.githubusercontent.com/26492811/153958530-9c10befe-8419-4f37-a044-e125bae1e3c4.mov
