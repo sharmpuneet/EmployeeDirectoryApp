@@ -87,7 +87,7 @@ class EmployeesDirectoryFragment : Fragment() {
     }
 
     private fun showEmptyState() {
-        binding?.swipeRefreshLayout?.visibility = GONE
+        binding?.employeeListView?.visibility = GONE
         binding?.textViewEmptyStates?.visibility = VISIBLE
     }
 
